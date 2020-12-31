@@ -1,0 +1,6 @@
+.App {
+    background-color: rgb(43, 43, 43);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
