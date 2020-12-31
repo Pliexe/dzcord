@@ -6,7 +6,9 @@
     "repository": "https://github.com/Pliexe/dzcord",
     "author": "pliexe",
     "scripts": {
-        "dev": "ts-node-dev --rs src/server.ts"
+        "dev": "ts-node-dev --rs src/server.ts",
+        "build": "tsc",
+        "start": "node ."
     },
     "license": "MIT",
     "private": false,
