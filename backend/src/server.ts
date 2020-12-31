@@ -4,6 +4,8 @@ import { Socket, Server } from 'socket.io';
 import path from 'path'
 import cors, { CorsOptions } from 'cors';
 
+const PORT = 80 || process.env.PORT;
+
 const corsOptions: CorsOptions = {
     origin: ['http://localhost', 'http://localhost:3000'],
     credentials: true
@@ -58,6 +60,6 @@ io.on('connection', (socket: Socket) => {
     });
 });
 
-server.listen(80, () => {
-    console.log('Listening to port: ' + 80);
+server.listen(PORT, () => {
+    console.log('Listening to port: ' + PORT);
 });
