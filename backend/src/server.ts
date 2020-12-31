@@ -4,7 +4,7 @@ import { Socket, Server } from 'socket.io';
 import path from 'path'
 import cors, { CorsOptions } from 'cors';
 
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 80;
 
 const corsOptions: CorsOptions = {
     origin: ['http://localhost', 'http://localhost:3000'],
